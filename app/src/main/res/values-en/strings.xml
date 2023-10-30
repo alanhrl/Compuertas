@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gates</string>
+    <string name="requiere_numero">You must enter a number</string>
+    <string name="requiere_entradas">First enter numbers</string>
+    <string name="compAND">AND Gate</string>
+    <string name="log_cero">0</string>
+    <string name="log_uno">1</string>
+    <string name="calc">CALCULATE</string>
+    <string name="creditos">Gates App By Alan HL</string>
+    <string name="compOR">OR Gate</string>
+    <string name="compNOR">NOR Gate</string>
+    <string name="compXOR">XOR Gate</string>
+    <string name="compXNOR">XNOR Gate</string>
+</resources>

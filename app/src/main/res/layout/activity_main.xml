@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compAND"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <ImageView
+        android:id="@+id/imvCompuerta"
+        android:layout_width="201dp"
+        android:layout_height="233dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/compand" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imvCompuerta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imvCompuerta"
+        app:layout_constraintTop_toTopOf="@+id/imvCompuerta"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <EditText
+        android:id="@+id/etEntrada1"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="@string/log_cero"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imvCompuerta"
+        app:layout_constraintEnd_toStartOf="@+id/imvCompuerta"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvCompuerta"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <EditText
+        android:id="@+id/etEntrada2"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="@string/log_uno"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imvCompuerta"
+        app:layout_constraintEnd_toStartOf="@+id/imvCompuerta"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvCompuerta"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/btn_color_estado"
+        android:enabled="false"
+        android:text="@string/calc"
+        android:textAlignment="center"
+        android:textColor="@color/color_texto_boton"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvCompuerta"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <ImageButton
+        android:id="@+id/btnAND"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/btn_copmuerta_color"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/compand" />
+
+    <ImageButton
+        android:id="@+id/btnOR"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/btn_copmuerta_color"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/compor" />
+
+    <ImageButton
+        android:id="@+id/btnNOR"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/btn_copmuerta_color"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/compnor" />
+
+    <ImageButton
+        android:id="@+id/btnXOR"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/btn_copmuerta_color"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/compxor" />
+
+    <ImageButton
+        android:id="@+id/btnXNOR"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/btn_copmuerta_color"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/compxnor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

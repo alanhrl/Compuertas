@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Compuertas</string>
+    <string name="requiere_numero">Debes ingresar un número</string>
+    <string name="requiere_entradas">Primero ingresar números</string>
+    <string name="compAND">Compuerta AND</string>
+    <string name="log_cero">0</string>
+    <string name="log_uno">1</string>
+    <string name="calc">CALCULAR</string>
+    <string name="creditos">App Compuertas Por Alan HL</string>
+    <string name="compOR">Compuerta OR</string>
+    <string name="compNOR">Compuerta NOR</string>
+    <string name="compXOR">Compuerta XOR</string>
+    <string name="compXNOR">Compuerta XNOR</string>
+</resources>
